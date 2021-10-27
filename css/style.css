@@ -1,0 +1,172 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+h1 {
+  text-align: center;
+  margin: 0 0 30px;
+  text-shadow: 1px 1px 4px #fff;
+}
+
+body {
+  width: 100%;
+  min-width: 768px;
+  background-color: rgb(233, 227, 227);
+  font-family: serif;
+  margin: 30px auto;
+}
+
+[name="searchMovie"] {
+  background-color: rgb(212, 208, 208);
+  width: 100%;
+  padding: 50px;
+}
+
+form>input,
+select,
+button {
+  width: 20vw;
+  height: 3vh;
+  margin: 0 20px 0 10px;
+  outline: none;
+  border: none;
+  font-size: 20px;
+}
+
+label {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+form>input:focus {
+  border: 1px solid rgb(71, 69, 69);
+}
+
+form>select:focus {
+  border: 1px solid rgb(71, 69, 69);
+}
+
+form>button:hover {
+  background-color: rgb(71, 69, 69);
+  color: #fff;
+}
+
+.container {
+  width: 100%;
+  position: relative;
+}
+
+.movie-list {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  
+}
+
+.error {
+  margin: 30px 0;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 18%;
+  height: auto;
+  margin: 30px 10px;
+  padding: 10px;
+  background-color: rgb(223, 221, 221);
+  text-align: center;
+}
+
+figcaption {
+  font-size: 24px;
+}
+
+figure>img {
+  width: 70%;
+  height: 400px;
+}
+
+figure>p {
+  margin: 20px 0;
+  font-size: 24px;
+}
+
+figure>button {
+  width: 50%;
+}
+
+.modal-container {
+  position: fixed;
+  top: 20%;
+  left: 0;
+  width: 100vw;
+  height: 100%;
+}
+
+.modal-main {
+  background-color: rgba(97, 93, 86, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  width: 50%;
+  margin: auto;
+  padding: 50px;
+}
+
+.poster,
+.film-full_info {
+  height: auto;
+  width: 50%;
+  color: #fff;
+  padding: 10px;
+}
+
+.poster img{
+  width: 80%;
+}
+
+
+.film-full_info div {
+  padding: 1.3em 10px;
+  font-size: .8vw;
+}
+
+.film-full_info b {
+  margin-right: 30px;
+  text-decoration: underline;
+}
+
+
+@media screen and (max-width: 1440px) {
+  .movie-list {
+    justify-content: start;
+    margin: 10px 10%;
+  }
+
+  figure {
+    width: 30%;
+  }
+
+  figure>img {
+    width: 100%;
+    height: 350px;
+  }
+}
+
+@media screen and (max-width: 920px) {
+  .movie-list {
+    justify-content: center;
+  }
+
+  figure {
+    width: 40%;
+  }
+}

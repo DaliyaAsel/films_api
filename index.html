@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Ajax-movie</title>
+</head>
+
+<body>
+  <h1>Search Movie</h1>
+  <form action="" method="GET" name="searchMovie">
+
+    <label for="inputTitle">Title</label>
+    <input type="text" name="inputTitle" id="inputTitle">
+    <!-- Явно не хватает внутреннего отступа слева -->
+
+    <label for="inputType">Type</label>
+    <select name="inputType" id="inputType">
+      <option value="movie">Movie</option>
+      <option value="series">Series</option>
+      <option value="episode">Episode</option>
+    </select>
+    <button id="btn-search">Search</button>
+  </form>
+  <!-- Если на сервер ничего не оптравляется можно строить пользовательские интерфейсы без объединения полей input в элемент form. Используйте обычные кнопки, прослушивайте простые клики на них и обрабатывайте поля input без самой формы. -->
+
+  <div class="container">
+    <div class="movie-list">
+      <!-- Для элементов, которые будут принимать какие-то данные из JS, не стоит заготавливать пустые строки – всё будет работать и без них -->
+    </div>
+  </div>
+
+  <script src="./js/script.js"></script>
+</body>
+
+</html>
